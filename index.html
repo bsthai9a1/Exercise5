@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>San Joaquin Valley Town Hall</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4e5;
+            display: flex;
+            justify-content: center;
+        }
+        .layout {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #990000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+        .nav {
+            background-color: #cc0000;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 2;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .separator {
+            border-top: 2px solid #990000;
+            margin: 20px 0;
+        }
+        .fossil-thread {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .fossil-thread img {
+            width: 40%;
+            height: auto;
+        }
+        .fossil-text {
+            width: 60%;
+        }
+        .fossil-text a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+        .fossil-text a:hover {
+            text-decoration: underline;
+        }
+        .speaker {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
+        footer {
+            width: 100%;
+            background-color: #990000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <h1>San Joaquin Valley Town Hall</h1>
+            <p><em>Celebrating our 75th Year</em></p>
+        </header>
+
+    <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="speakers.html">Speakers</a>
+            <a href="luncheons.html">Luncheons</a>
+            <a href="tickets.html">Tickets</a>
+    <div class="dropdown">
+        <a href="#" class="dropdown-toggle">About Us </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Board Members</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+        <main>
+            <aside class="sidebar">
+                <h3>Guest Speakers</h3>
+                <div class="speaker">
+                    <img src="male.png" alt="October" class="speaker-img">
+                    <p>David Brancaccio</p>
+                </div>
+                <div class="speaker">
+                    <img src="male.png" alt="November" class="speaker-img">
+                    <p>Andrew Ross Sorkin</p>
+                </div>
+                <div class="speaker">
+                    <img src="female.png" alt="January" class="speaker-img">
+                    <p>Amy Chua</p>
+                </div>
+                <div class="speaker">
+                    <img src="male.png" alt="February" class="speaker-img">
+                    <p>Scott Sampson</p>
+                </div>
+            </aside>
+
+            <section class="main-content">
+                <h3 style="color: red;">Our Mission</h3>
+                <p>San Joaquin Valley Town Hall is a non-profit organization...</p>
+                
+                <div class="separator"></div>
+                
+                <h3>Speaker of the Month</h3>
+                <h2 style="color: red;">Fossil Threads in the Web of Life</h2>
+                
+                <div class="fossil-thread">
+                    <div class="fossil-text">
+                        <p><strong>February</strong></p>
+                        <p><strong>Scott Sampson</strong></p>
+                        <p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum of Natural History, steps to the podium. Sampson’s research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.</p>
+                        <p><a href="#">Read more</a> / <a href="#">Or play video</a></p>
+                    </div>
+                    <img src="sampson_dinosaur.jpg" alt="Dinosaur">
+                </div>
+                
+                <div class="separator"></div>
+                
+                <div class="ticket-box">
+                    <h3 style="color: red;">Our Ticket Packages</h3>
+                    <ul>
+                        <li>Season Package: $95</li>
+                        <li>Patron Package: $200</li>
+                        <li>Single Speaker: $25</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2022, San Joaquin Valley Town Hall, Fresno, CA 93755
+        </footer>
+    </div>
+</body>
+</html>
